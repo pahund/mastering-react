@@ -38,6 +38,5 @@ describe("[components/orders/OrderRow", () => {
             "Autorisiert",
             "Offen"
         ]);
-
     });
 });
