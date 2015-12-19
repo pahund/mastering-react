@@ -4,7 +4,7 @@
   "description": "Mastering React video course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel/register --recursive test/**/*.spec.js",
     "build": "browserify src/main.js -t [ babelify --presets [ es2015 react ] ] --outfile public/bundle.js && node-sass --output-style compressed styles/main.scss public/main.css"
   },
   "repository": {
@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/hojberg/mastering-react",
   "dependencies": {
+    "babel": "^6.3.13",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
     "moment": "^2.10.6",
     "numeral": "^1.5.3",
     "react": "^0.14.3",
+    "react-addons-test-utils": "^0.14.3",
     "react-dom": "^0.14.3"
   },
   "devDependencies": {
