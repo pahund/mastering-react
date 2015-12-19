@@ -27,6 +27,7 @@ build/Release
 node_modules
 
 public/bundle.js
+public/main.css
 
 # IntelliJ IDEA stuff
 *.iml
